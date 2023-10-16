@@ -12,8 +12,10 @@ function SumarNumeros(){
         height: "150px"
     }
 
-    const sumar = (numero) => {
-        suma = suma + numero;
+    const sumar = (num1,num2) => {
+        num1 = parseInt(props.numero1);
+        num2 = parseInt(props.numero2);
+        var suma = num1 + num2;
         console.log(suma);
     }
 
@@ -25,8 +27,8 @@ function SumarNumeros(){
 
         <hr/>
 
-        <button onClick={ () => sumar(2)}>Sumar 2</button>
-        <button  onClick={ () => sumar(3)}>Sumar 3</button>
+        <button onClick={ () => sumar()}>Sumar 2</button>
+        <button  onClick={ () => sumar()}>Sumar 3</button>
 
     </div>)
 }
